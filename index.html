@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Limits On Our Own Power</title>
+<meta name="description" content="Checks and balances for the Libertarian Party, and a plan to grow it. A proposal to the SCLP State Committee.">
+<meta property="og:title" content="Limits On Our Own Power">
+<meta property="og:description" content="Checks and balances for the Libertarian Party, and a plan to grow it.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400..700&display=swap">
+<style>
+  :root { --ink:#13213C; --night:#0B1428; --gold:#E2B13C; --paper:#F5F1E8; --muted:#C5CFDF; }
+  * { box-sizing:border-box; }
+  html, body { height:100%; margin:0; }
+  body { background:var(--night); color:var(--paper); font-family:'Public Sans', Arial, sans-serif;
+         display:flex; flex-direction:column; overflow:hidden; }
+  main { flex:1; min-height:0; display:flex; align-items:center; justify-content:center; padding:16px; position:relative; }
+  .frame { position:relative; box-shadow:0 20px 60px rgba(0,0,0,.45); border-radius:6px; overflow:hidden; }
+  .scaler { width:1920px; height:1080px; transform-origin:0 0; position:absolute; left:0; top:0; }
+  .slide { display:none; }
+  .slide.on { display:block; }
+  .slide section { position:relative; width:1920px; height:1080px; overflow:hidden; }
+  .slide section div:not([style*="display"]) { display:flex; flex-direction:column; }
+  .slide h1, .slide h2, .slide h3, .slide p { margin:0; }
+  .slide p { line-height:1.4; }
+  .slide table { border-collapse:collapse; width:100%; }
+  .slide th, .slide td { padding:0.35em 0.6em; text-align:left; border-bottom:1px solid #DDD5C3; }
+  .slide th { font-weight:700; }
+  .slide .arrow { flex:none; align-self:center; }
+  .nav { position:absolute; top:50%; transform:translateY(-50%); width:52px; height:52px; border-radius:50%;
+          border:1px solid rgba(245,241,232,.25); background:rgba(19,33,60,.82); color:var(--paper);
+          display:flex; align-items:center; justify-content:center; cursor:pointer; z-index:2; }
+  .nav:hover { background:var(--ink); border-color:var(--gold); }
+  .nav:focus-visible { outline:3px solid var(--gold); outline-offset:2px; }
+  .nav[disabled] { opacity:.3; cursor:default; }
+  .nav.prev { left:12px; } .nav.next { right:12px; }
+  .nav svg { width:22px; height:22px; }
+  footer { display:flex; align-items:center; justify-content:center; gap:20px; padding:10px 16px 14px; font-size:15px; color:var(--muted); }
+  footer button { font:inherit; color:var(--paper); background:transparent; border:1px solid rgba(245,241,232,.3);
+                   border-radius:999px; padding:6px 16px; cursor:pointer; }
+  footer button:hover, footer button[aria-pressed="true"] { border-color:var(--gold); color:var(--gold); }
+  .count { font-variant-numeric:tabular-nums; min-width:64px; text-align:center; }
+  .notes { display:none; max-width:960px; margin:0 auto 14px; padding:14px 18px; background:#13213C; border:1px solid #24375C;
+            border-radius:10px; font-size:16px; line-height:1.5; color:var(--paper); }
+  .notes.on { display:block; }
+  .hint { display:none; text-align:center; font-size:14px; color:var(--muted); padding:0 16px 8px; }
+  @media (max-width:700px) and (orientation:portrait) { .hint { display:block; } }
+  @media (max-width:700px) { .nav { width:40px; height:40px; } .nav.prev { left:4px; } .nav.next { right:4px; } }
+</style>
+</head>
+<body>
+<main>
+  <button class="nav prev" type="button" aria-label="Previous Slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 5 L8 12 L15 19"/></svg></button>
+  <div class="frame" id="frame"><div class="scaler" id="scaler">
+<div class="slide" role="group" aria-roledescription="slide" aria-label="1 of 16"><section data-notes="Thanks for the time. This is a proposal in two halves: structural reforms that put checks on the national party’s power, and a growth plan that starts here in South Carolina. I’ll show the evidence first, then the package, then what I’m asking this committee for. About fifteen minutes, then discussion." id="cover" data-transition="fade" style="background:#13213C;color:#F5F1E8;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#E2B13C;font-weight:600">A reform &amp; growth proposal</p>
+<h1 style="font-family:'Libre Baskerville', Georgia, serif;font-size:120px;font-weight:700;line-height:1.1;color:#F5F1E8">Limits On<br>Our Own Power</h1>
+<div style="width:160px;height:6px;background:#E2B13C"></div>
+<p style="font-size:44px;line-height:1.3;color:#C5CFDF">Checks and balances for the Libertarian Party, and a plan to grow it</p>
+<p style="font-size:24px;color:#C5CFDF">Ethan Mathis · SCLP State Committee · November 7, 2026</p>
+</section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 16"><section data-notes="Most of us have seen this. Leadership changes, priorities reset, people who lost go home, and the volunteers doing the actual work burn out. My argument is that this isn’t only about personalities. Our structure rewards it, and structure is something we can change." id="premise" data-transition="fade" style="background:#F5F1E8;color:#13213C;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:48px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#8A5E0E;font-weight:600">The pattern</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.2;color:#13213C">Every Two Years, We Fight Over The Steering Wheel. Then We Start Over.</h2>
+<p style="font-size:32px;line-height:1.4;color:#4A5161">A new faction wins, the other side goes home, and the work resets. Long-time members have watched this cycle repeat for twenty years.</p>
+</section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 16"><section data-notes="Four numbers. In 2024, the convention never heard the Bylaws or Platform committee reports, so no planned reform reached a vote. I counted every motion, point of order and appeal in the minutes: 53 people out of about 930 delegates made all of them, and 11 made half. And this year the LNC revoked New Hampshire 15 to 2, and the Judicial Committee upheld it 7 to 0. Whatever you think of New Hampshire, that’s a lot of power with very little check on it." id="evidence" data-transition="fade" style="background:#13213C;color:#F5F1E8;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#E2B13C;font-weight:600">The evidence</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#F5F1E8">What The Record Shows</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1C2D4D;border-radius:16px;padding:40px">
+<p style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#E2B13C">0 of 2</p>
+<p style="font-size:32px;line-height:1.4;color:#C5CFDF">committee reports heard in 2024. Bylaws and Platform ran out of time.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#1C2D4D;border-radius:16px;padding:40px">
+<p style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#E2B13C">11</p>
+<p style="font-size:32px;line-height:1.4;color:#C5CFDF">delegates made half of the 98 recorded floor actions in 2024.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#1C2D4D;border-radius:16px;padding:40px">
+<p style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#E2B13C">15–2</p>
+<p style="font-size:32px;line-height:1.4;color:#C5CFDF">LNC vote to revoke New Hampshire’s affiliation, May 25, 2026.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#1C2D4D;border-radius:16px;padding:40px">
+<p style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#E2B13C">7–0</p>
+<p style="font-size:32px;line-height:1.4;color:#C5CFDF">Judicial Committee vote upholding the revocation, August 2026.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#8E9BB3">Sources: 2024 National Convention minutes (Final V3); InDepthNH, May 26 and Aug. 19, 2026</p>
+</section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="4 of 16"><section data-notes="The bylaws do give the LNC the power to revoke a state. What they leave out is everything around that power: what counts as cause, any notice to the state, and where the burden of proof falls. And the Judicial Committee can only hear seven listed kinds of cases. Rival-group fights, a state choosing to leave, credentials disputes: none of those have anywhere to go inside the party, so they go to court." id="gaps" data-transition="fade" style="background:#F5F1E8;color:#13213C;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#8A5E0E;font-weight:600">The gaps</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#13213C">Where The Bylaws Go Quiet</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FBF9F4;border:1px solid #DDD5C3;border-radius:16px;padding:40px">
+<h3 style="font-size:32px;font-weight:700;line-height:1.2;color:#13213C">“Cause” Is Never Defined</h3>
+<p style="font-size:24px;line-height:1.4;color:#4A5161">The LNC can revoke a state affiliate “for cause” by a 3/4 vote. What counts as cause is left open.</p>
+<p style="font-size:24px;color:#8A5E0E;font-weight:600">Article 5.6</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FBF9F4;border:1px solid #DDD5C3;border-radius:16px;padding:40px">
+<h3 style="font-size:32px;font-weight:700;line-height:1.2;color:#13213C">No Notice Before The Vote</h3>
+<p style="font-size:24px;line-height:1.4;color:#4A5161">The motion must name the cause. Nothing requires warning the affiliate or hearing from it first.</p>
+<p style="font-size:24px;color:#8A5E0E;font-weight:600">Article 5.6</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FBF9F4;border:1px solid #DDD5C3;border-radius:16px;padding:40px">
+<h3 style="font-size:32px;font-weight:700;line-height:1.2;color:#13213C">The State Carries The Burden</h3>
+<p style="font-size:24px;line-height:1.4;color:#4A5161">On appeal, the affiliate must prove the LNC wrong. If no ruling comes within 30 days, the revocation stands.</p>
+<p style="font-size:24px;color:#8A5E0E;font-weight:600">Article 5.6</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FBF9F4;border:1px solid #DDD5C3;border-radius:16px;padding:40px">
+<h3 style="font-size:32px;font-weight:700;line-height:1.2;color:#13213C">Most Disputes Have No Forum</h3>
+<p style="font-size:24px;line-height:1.4;color:#4A5161">The Judicial Committee hears seven listed matters, and can refuse anything tied up in outside litigation.</p>
+<p style="font-size:24px;color:#8A5E0E;font-weight:600">Article 8.2 · JC Rule 2.8(h)</p>
+</div>
+</div>
+</section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="5 of 16"><section data-notes="The core idea: the LNC keeps running the party, but the actions that can hurt a state need a second key. That key belongs to the state chairs, acting as a standing Council. Second, flip the LNC from a blanket grant of power to a list, like the Tenth Amendment. Third, the LNC stops appointing its own replacements and the committees that write the rules it lives under. And the person presiding over a convention shouldn’t be someone the convention is voting on." id="pillar-checks" data-transition="fade" style="display:flex; flex-direction:column; gap:48px; padding:128px; background:#f5f1e8">
+  <div style="display:flex; flex-direction:column; gap:16px">
+    <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; font-weight:600; letter-spacing:4px; text-transform:uppercase; color:#8a5e0e">Part 1 · Checks and balances</p>
+    <h2 style="font-family:'Libre Baskerville', Georgia, serif; font-size:72px; font-weight:700; line-height:1.1; color:#13213c">Put A Second Key On The Big Powers</h2>
+  </div>
+  <div style="display:grid; gap:32px; grid-template-columns:1fr 1fr 1fr">
+    <div style="display:flex; flex-direction:column; gap:12px; padding:32px; background:#fbf9f4; border:2px solid #e2b13c; border-radius:16px; box-shadow:0 2px 8px 5px #00000033">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#13213c">Council Of State Chairs</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161">A standing body that must ratify revocations, nominee suspensions and the LNC’s picks for empty seats.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; padding:32px; background:#fbf9f4; border:2px solid #e2b13c; border-radius:16px; opacity:1; box-shadow:0 2px 8px 5px #00000033">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#13213c">Enumerated Powers</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161">The LNC holds only the powers the bylaws list. The rest stays with the states and the convention.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; padding:32px; background:#fbf9f4; border:2px solid #e2b13c; border-radius:16px; box-shadow:0 2px 8px 5px #00000033">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#13213c">No Self-Appointment</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161">The LNC stops filling its own empty seats. Seat the next-highest finisher, or require Council confirmation.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; padding:32px; background:#fbf9f4; border:2px solid #e2b13c; border-radius:16px; box-shadow:0 2px 8px 5px #00000033">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#13213c">States Pick The Rule-Writers</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161">Affiliates, not the LNC, choose the Bylaws, Credentials and Platform committees.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; padding:32px; background:#fbf9f4; border:2px solid #e2b13c; border-radius:16px; box-shadow:0 2px 8px 5px #00000033">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#13213c">A Neutral Convention Chair</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161">Delegates elect a presiding officer who is neither a party officer nor a candidate.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; padding:32px; background:#13213c; border:4px solid #13213c; border-radius:16px; box-shadow:0 2px 8px 5px #00000033">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#e2b13c">Why It Works</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#c5cfdf">A faction that controls the LNC would also need most of the states to agree.</p>
+    </div>
+  </div>
+  </section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="6 of 16"><section data-notes="Here’s the whole structure on one slide. At the top, the convention has two chambers, one where every state is equal and one based on membership, and the big decisions need both. Between conventions, the LNC acts, the Council of State Chairs ratifies anything that hurts a state, and the Judicial Committee reviews appeals with the burden on whoever acted. The People’s Champion gives ordinary members, the ones who never make it to a convention, a direct voice." id="structure" data-transition="fade" style="display:flex; flex-direction:column; gap:40px; padding:128px; background:#ece6d8">
+  <div style="display:flex; flex-direction:column; gap:16px">
+    <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; font-weight:600; letter-spacing:4px; text-transform:uppercase; color:#8a5e0e">How the pieces fit</p>
+    <h2 style="font-family:'Libre Baskerville', Georgia, serif; font-size:72px; font-weight:700; line-height:1.1; color:#13213c">One Party, Separated Powers</h2>
+  </div>
+  <div style="display:flex; flex-direction:column; gap:16px; padding:32px; background:#13213c; border-radius:16px">
+    <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:#e2b13c">The convention · two chambers, both must agree</p>
+    <div style="display:flex; flex-direction:row; gap:24px">
+      <div style="display:flex; flex-direction:column; gap:8px; flex:1; padding:24px; background:#1c2d4d; border-radius:12px">
+        <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#f5f1e8">States Chamber</h3>
+        <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#c5cfdf">Two per state. Every state counts equally.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:8px; flex:1; padding:24px; background:#1c2d4d; border-radius:12px">
+        <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#f5f1e8">Members Chamber</h3>
+        <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#c5cfdf">Delegates allocated by membership and votes.</p>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex; flex-direction:row; gap:16px">
+    <div style="display:flex; flex-direction:column; gap:8px; flex:1; padding:32px; background:#fbf9f4; border:1px solid #ddd5c3; border-radius:16px">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#13213c">LNC</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161"><b>Acts.</b> Runs the party between conventions.</p>
+    </div>
+    <svg class="arrow" width="72" height="24" viewBox="0 0 72 24" aria-hidden="true"><line x1="0" y1="12" x2="62" y2="12" stroke="#8a5e0e" stroke-width="3"/><path d="M56 4 L70 12 L56 20" fill="none" stroke="#8a5e0e" stroke-width="3"/></svg>
+    <div style="display:flex; flex-direction:column; gap:8px; flex:1; padding:32px; background:#fbf9f4; border:1px solid #ddd5c3; border-radius:16px">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#13213c">Council Of State Chairs</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161"><b>Ratifies.</b> Revocations, suspensions, seat picks.</p>
+    </div>
+    <svg class="arrow" width="72" height="24" viewBox="0 0 72 24" aria-hidden="true"><line x1="0" y1="12" x2="62" y2="12" stroke="#8a5e0e" stroke-width="3"/><path d="M56 4 L70 12 L56 20" fill="none" stroke="#8a5e0e" stroke-width="3"/></svg>
+    <div style="display:flex; flex-direction:column; gap:8px; flex:1; padding:32px; background:#fbf9f4; border:1px solid #ddd5c3; border-radius:16px">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#13213c">Judicial Committee</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161"><b>Reviews.</b> Appeals, with the burden on whoever acted.</p>
+    </div>
+  </div>
+  <p style="padding:20px 32px; font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#13213c; background:#e2b13c; border-radius:256px"><b>People’s Champion</b> · one per state, elected by all members of that state · can petition, delay, and force a member vote</p>
+  </section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="7 of 16"><section data-notes="This is the part that would have changed the New Hampshire case. Define cause. Give written notice and time to fix the problem before a vote. Allow lesser sanctions so revocation isn’t the only tool. Put the burden of proof on whoever took the action, and if the Judicial Committee misses its deadline, the state is reinstated instead of the revocation standing. Staggered terms mean no single convention replaces everyone at once. And none of it matters unless bylaws business actually gets floor time, which it didn’t in 2024." id="pillar-process" data-transition="fade" style="display:flex; flex-direction:column; gap:40px; padding:128px 128px 160px; background:#f5f1e8">
+  <div style="display:flex; flex-direction:column; gap:16px">
+    <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; font-weight:600; letter-spacing:4px; text-transform:uppercase; color:#8a5e0e">Part 2 · Due process and stability</p>
+    <h2 style="font-family:'Libre Baskerville', Georgia, serif; font-size:72px; font-weight:700; line-height:1.1; color:#13213c">Give Every Affiliate Due Process</h2>
+  </div>
+  <table style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; color:#13213c">
+    <tr style="background:#13213c"><th style="width:24%; color:#f5f1e8"></th><th style="width:32%; color:#f5f1e8">Today</th><th style="width:44%; color:#e2b13c">Proposed</th></tr>
+    <tr style="background:#fbf9f4"><td>Grounds</td><td style="color:#4a5161">“For cause” is undefined</td><td>A short list of specific grounds</td></tr>
+    <tr style="background:#f5f1e8"><td>Notice</td><td style="color:#4a5161">None required</td><td>Written charges + 60–90 days to fix</td></tr>
+    <tr style="background:#fbf9f4"><td>Sanctions</td><td style="color:#4a5161">Revocation only</td><td>Censure, held funds, lost privileges</td></tr>
+    <tr style="background:#f5f1e8"><td>Burden of proof</td><td style="color:#4a5161">On the affiliate</td><td>On the body that acted</td></tr>
+    <tr style="background:#fbf9f4"><td>Missed deadline</td><td style="color:#4a5161">Revocation stands</td><td>Affiliate is reinstated</td></tr>
+    <tr style="background:#f5f1e8"><td>Terms</td><td style="color:#4a5161">Every seat, every 2 years</td><td>Staggered 4-year terms</td></tr>
+  </table>
+  <p style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; line-height:1.4; color:#4a5161">Plus guaranteed agenda time, so bylaws reforms actually reach a vote.</p>
+  <p style="position:absolute; bottom:64px; left:128px; width:1664px; font-family:'Public Sans', Arial, sans-serif; font-size:24px; color:#6b6f78">Bylaws Articles 5.6, 6.7, 7.5 and 8.1 (2026 edition)</p>
+  </section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="8 of 16"><section data-notes="Two chambers that both have to agree. One gives every state equal weight, the other weights by membership. A faction would need a majority of members and a majority of states. The People’s Champion is modeled on the Roman tribune: elected by all members, including the ones who never attend a convention, with blocking and petition powers rather than a heavier vote." id="pillar-representation" data-transition="fade" style="background:#f5f1e8">
+  <div id="peabc2e7796c4r0-bbcf378b" style="position:absolute; top:128px; left:128px; width:1664px; height:129px; display:flex; flex-direction:column; gap:16px">
+    <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; font-weight:600; letter-spacing:4px; text-transform:uppercase; color:#8a5e0e">Part 3 · Representation</p>
+    <h2 style="font-family:'Libre Baskerville', Georgia, serif; font-size:72px; font-weight:700; line-height:1.1; color:#13213c">Give States &amp; Members A Voice</h2>
+  </div>
+  <div id="peabc2e7796c4r1-bbcf378b" style="position:absolute; top:305px; left:128px; width:1664px; height:426px; display:flex; flex-direction:row; gap:32px">
+    <div style="height:550px; display:flex; flex-direction:column; gap:12px; flex:1; padding:40px; background:#fbf9f4; border:1px solid #ddd5c3; border-radius:16px">
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:#8a5e0e">Chamber 1</p>
+      <h3 style="font-family:'Libre Baskerville', Georgia, serif; font-size:44px; font-weight:700; line-height:1.2; color:#13213c">States</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161">Two delegates per state, chosen by those State Committee Officers who compr both the previous and newly elected State Committees party. Every state counts equally, the way the Senate works.</p>
+    </div>
+    <div style="height:550px; display:flex; flex-direction:column; gap:12px; flex:1; padding:40px; background:#fbf9f4; border:1px solid #ddd5c3; border-radius:16px">
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:#8a5e0e">Chamber 2</p>
+      <h3 style="font-family:'Libre Baskerville', Georgia, serif; font-size:44px; font-weight:700; line-height:1.2; color:#13213c">State Delegates</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161">Those delegates of the State Convention elected to represent the affiliate at the National Convention.<br></p>
+    </div>
+    <div style="height:550px; display:flex; flex-direction:column; gap:12px; flex:1; padding:40px; background:#13213c; border-radius:16px">
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; font-weight:600; letter-spacing:3px; text-transform:uppercase; color:#e2b13c">One per state</p>
+      <h3 style="font-family:'Libre Baskerville', Georgia, serif; font-size:44px; font-weight:700; line-height:1.2; color:#f5f1e8">People’s Champion</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#c5cfdf">Elected by all official members of the affiliate State Party <i>regardless of those members' delegate status to prior Conventions.</i>&nbsp;<br><br><br>The PC can petition the Judicial Committee, force an advisory member vote, and delay a revocation.</p>
+    </div>
+  </div>
+  <p id="peabc2e7796c4r2-bbcf378b" style="position:absolute; top:891.78px; left:50%; width:1664px; font-family:'Public Sans', Arial, sans-serif; font-size:32px; line-height:1.4; color:#13213c; transform:translateX(-50%)">Revocations and changes to the Bylaws or the Party Platform need <b>both chambers</b> to agree.</p>
+  </section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="9 of 16"><section data-notes="The reforms fix the structure. This half is about growth. The principle is simple: money and attention should go to work that produces results, not to fights over who controls the money." id="fund-work" data-transition="fade" style="background:#E2B13C;color:#13213C;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;justify-content:center;gap:48px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#13213C;font-weight:600">Part 4 · Tools and growth</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:120px;font-weight:700;line-height:1.1;color:#13213C">Fund The Work,<br>Not The Fights.</h2>
+<p style="font-size:32px;line-height:1.4;color:#13213C">Pay for petitions, booths, research and tools, not for the next battle over who controls the treasury.</p>
+</section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="10 of 16"><section data-notes="People sometimes say a political party exists to run candidates, full stop. Our own bylaws disagree. Article 2 lists five purposes, and only two are about candidates. Growing affiliates and public information, meaning education and watchdog work, are right there too. I’m not against running candidates: the ballot line is the one thing we have that think tanks don’t. But a candidate with no network loses. The movement work builds the network that candidates need." id="five-purposes" data-transition="fade" style="background:#13213C;color:#F5F1E8;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#E2B13C;font-weight:600">Why the party exists</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#F5F1E8">Five Purposes, Not One</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;gap:32px;align-items:center">
+<p style="font-family:'Libre Baskerville', Georgia, serif;font-size:44px;font-weight:700;line-height:1.2;color:#E2B13C;width:64px">1</p>
+<p style="flex:1;font-size:32px;line-height:1.4;color:#F5F1E8">Stand as a political party separate from all others</p>
+</div>
+<div style="display:flex;gap:32px;align-items:center">
+<p style="font-family:'Libre Baskerville', Georgia, serif;font-size:44px;font-weight:700;line-height:1.2;color:#E2B13C;width:64px">2</p>
+<p style="flex:1;font-size:32px;line-height:1.4;color:#F5F1E8">Elect Libertarians to move policy in a libertarian direction</p>
+</div>
+<div style="display:flex;gap:32px;align-items:center">
+<p style="font-family:'Libre Baskerville', Georgia, serif;font-size:44px;font-weight:700;line-height:1.2;color:#E2B13C;width:64px">3</p>
+<p style="flex:1;font-size:32px;line-height:1.4;color:#F5F1E8">Charter state affiliates and promote their growth</p>
+</div>
+<div style="display:flex;gap:32px;align-items:center">
+<p style="font-family:'Libre Baskerville', Georgia, serif;font-size:44px;font-weight:700;line-height:1.2;color:#E2B13C;width:64px">4</p>
+<p style="flex:1;font-size:32px;line-height:1.4;color:#F5F1E8">Nominate a presidential ticket and support Party and affiliate candidates</p>
+</div>
+<div style="display:flex;gap:32px;align-items:center">
+<p style="font-family:'Libre Baskerville', Georgia, serif;font-size:44px;font-weight:700;line-height:1.2;color:#E2B13C;width:64px">5</p>
+<p style="flex:1;font-size:32px;line-height:1.4;color:#F5F1E8">Enter into “public information activities”: education and watchdog work</p>
+</div>
+</div>
+<p style="font-size:32px;line-height:1.4;color:#C5CFDF">Running candidates matters. The movement work is what makes candidates win.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#8E9BB3">Bylaws Article 2 (2026 edition)</p>
+</section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="11 of 16"><section data-notes="Five practical pieces. Chip-card check-in gives us a live count of who’s actually on the floor. The civic tools are free and nonpartisan: anyone can find their district or their deadlines, and they find out the LP built it. Every new member gets a job in their first month, because people stay when they have something to do. On money: keep giving national the $25 that keeps you a sustaining member, because that’s what our delegate count is based on, and send the rest to designated state funds. Anyone who gets funded reports what they did with it." id="tools" data-transition="fade" style="display:flex; flex-direction:column; gap:48px; padding:128px; background:#f5f1e8">
+  <div style="display:flex; flex-direction:column; gap:16px">
+    <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; font-weight:600; letter-spacing:4px; text-transform:uppercase; color:#8a5e0e">Part 4 · Tools and growth</p>
+    <h2 style="font-family:'Libre Baskerville', Georgia, serif; font-size:72px; font-weight:700; line-height:1.1; color:#13213c">Show The Work, Then Count It</h2>
+  </div>
+  <div style="display:grid; gap:32px; grid-template-columns:1fr 1fr 1fr">
+    <div style="display:flex; flex-direction:column; gap:12px; padding:32px; background:#fbf9f4; border:1px solid #ddd5c3; border-radius:16px">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#13213c">Chip-Card Check-In</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161">Delegates tap in on the floor. A live count of credentialed delegates ends the quorum fights.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; padding:32px; background:#fbf9f4; border:1px solid #ddd5c3; border-radius:16px">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#13213c">Free Civic Tools</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161">Precinct maps, district layers and the election clock, offered to the public and every affiliate.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; padding:32px; background:#fbf9f4; border:1px solid #ddd5c3; border-radius:16px">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#13213c">A Mission Within 30 Days</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161">Every new member gets a real task in their first month: a petition shift, a booth, data work.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; padding:32px; background:#fbf9f4; border:1px solid #ddd5c3; border-radius:16px">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#13213c">Stay Sustaining, Give Local</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161">Give national the $25 that keeps you sustaining and protects SC’s delegates. Send the rest to designated state funds.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; padding:32px; background:#fbf9f4; border:1px solid #ddd5c3; border-radius:16px">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#13213c">A Public Ledger</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161">Anyone funded posts what the money produced: signatures, articles, events.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; padding:32px; background:#13213c; border-radius:16px">
+      <h3 style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; font-weight:700; line-height:1.2; color:#e2b13c">Prove It Here First</h3>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#c5cfdf">Run the whole package in South Carolina and count the results.</p>
+    </div>
+  </div>
+  </section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="12 of 16"><section data-notes="This is what’s already been built. The outreach tracker holds more than a thousand libertarian-leaning South Carolinians across 34 counties, many I’ve spoken with by phone. The state maps cover South Carolina and ten other states. Six Degrees is still early, but the idea is simple: an opt-in map that shows members how many of us are nearby. The biggest finding from all those calls is that we aren’t few, we’re scattered. People don’t know their neighbors share their views. I’m only showing totals here, never names." id="work-done" data-transition="fade" style="display:flex; flex-direction:column; gap:48px; padding:128px 128px 160px; background:#f5f1e8">
+  <div style="display:flex; flex-direction:column; gap:16px">
+    <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; font-weight:600; letter-spacing:4px; text-transform:uppercase; color:#8a5e0e">Proof of work</p>
+    <h2 style="font-family:'Libre Baskerville', Georgia, serif; font-size:72px; font-weight:700; line-height:1.1; color:#13213c">Work Already Done In South Carolina</h2>
+  </div>
+  <div style="display:grid; gap:32px; grid-template-columns:1fr 1fr">
+    <div style="display:flex; flex-direction:column; gap:12px; padding:40px; background:#fbf9f4; border:1px solid #ddd5c3; border-radius:16px">
+      <p style="font-family:'Libre Baskerville', Georgia, serif; font-size:72px; font-weight:700; line-height:1.1; color:#8a5e0e">1,000+ Prospects</p>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161"><b>Outreach Tracker.</b> Libertarian-leaning South Carolinians identified, many already contacted by phone.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; padding:40px; background:#fbf9f4; border:1px solid #ddd5c3; border-radius:16px">
+      <p style="font-family:'Libre Baskerville', Georgia, serif; font-size:72px; font-weight:700; line-height:1.1; color:#8a5e0e">11 State Maps</p>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161"><b>Civic Tools.</b> County, district, and precinct layers on one shared base, starting with South Carolina.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; padding:40px; background:#fbf9f4; border:1px solid #ddd5c3; border-radius:16px">
+      <p style="font-family:'Libre Baskerville', Georgia, serif; font-size:72px; font-weight:700; line-height:1.1; color:#8a5e0e">SC6° Network</p>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#4a5161"><b>Early Build.</b> An invite-only opt-in social media app/site that shows members how many of us live in their own county.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:12px; padding:40px; background:#13213c; border-radius:16px">
+      <p style="font-family:'Libre Baskerville', Georgia, serif; font-size:72px; font-weight:700; line-height:1.1; color:#e2b13c">The Reality</p>
+      <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; line-height:1.4; color:#c5cfdf"><b>We Have The Numbers To Win.</b> Most of our people don’t know each other, nor how many neighbors share their views.</p>
+    </div>
+  </div>
+  <p style="position:absolute; bottom:64px; left:128px; width:1664px; font-family:'Public Sans', Arial, sans-serif; font-size:24px; color:#6b6f78">Totals only. No names leave the tracker, and Six Degrees shows only people who opt in. Also built: the election clock.</p>
+  </section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="13 of 16"><section data-notes="The structural reforms can only pass at a national convention, with two-thirds, so the next real chance is 2028. The Bylaws Committee is appointed at least a year ahead, so our drafts need to be ready by mid-2027. In the meantime, South Carolina runs the growth side as a pilot, starting from an honest baseline count, so in 2028 we bring results, not just proposals." id="pilot" data-transition="fade" style="background:#ECE6D8;color:#13213C;font-family:'Public Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:64px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#8A5E0E;font-weight:600">The plan</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#13213C">From This Meeting To The 2028 Convention</h2>
+</div>
+<div style="display:flex;gap:32px">
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;border-top:6px solid #8A5E0E;padding:32px 0px 0px 0px">
+<h3 style="font-size:32px;font-weight:700;line-height:1.2;color:#13213C">Nov 7, 2026</h3>
+<p style="font-size:24px;line-height:1.4;color:#4A5161">This committee endorses a South Carolina pilot and forms a small working group.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;border-top:6px solid #8A5E0E;padding:32px 0px 0px 0px">
+<h3 style="font-size:32px;font-weight:700;line-height:1.2;color:#13213C">Winter 2026–27</h3>
+<p style="font-size:24px;line-height:1.4;color:#4A5161">Tools and new-member onboarding go live. We record today’s member count as the baseline.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;border-top:6px solid #8A5E0E;padding:32px 0px 0px 0px">
+<h3 style="font-size:32px;font-weight:700;line-height:1.2;color:#13213C">By Mid-2027</h3>
+<p style="font-size:24px;line-height:1.4;color:#4A5161">Draft amendments go to the national Bylaws Committee and to other state affiliates.</p>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:16px;border-top:6px solid #E2B13C;padding:32px 0px 0px 0px">
+<h3 style="font-size:32px;font-weight:700;line-height:1.2;color:#13213C">2028 Convention</h3>
+<p style="font-size:24px;line-height:1.4;color:#4A5161">Amendments need a 2/3 vote. We bring a year of South Carolina results with them.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6B6F78">Bylaws Art. 11.2: the Bylaws Committee is appointed at least 12 months before the convention · Art. 17.1: amendments need 2/3</p>
+</section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="14 of 16"><section data-notes="A quick word on what’s not in here, because I thought about these and rejected them. Letting other states vet our delegates sounds like quality control but it’s a capture tool. Bonus weight for unanimous delegations punishes dissent. And sending money person to person for petitioning or campaigns can make volunteers into unregistered political committees under campaign-finance law. Non-electoral work like research and journalism is a different story." id="not-proposing" data-transition="fade" style="background:#F5F1E8;color:#13213C;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#8A5E0E;font-weight:600">What we’re not proposing</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#13213C">Ideas We Weighed &amp; Set Aside</h2>
+</div>
+<table style="font-family:'Public Sans', Arial, sans-serif;font-size:32px;color:#13213C">
+<tr style="background:#13213C"><th style="width:46%;color:#F5F1E8">Idea</th><th style="width:54%;color:#E2B13C">Why Not</th></tr>
+<tr style="background:#FBF9F4"><td>Other states vet each state’s delegates</td><td style="color:#4A5161">Opens the door to capture across state lines</td></tr>
+<tr style="background:#F5F1E8"><td>Bonus votes for unanimous delegations</td><td style="color:#4A5161">Pressures dissenters and favors small delegations</td></tr>
+<tr style="background:#FBF9F4"><td>Venmo-style giving for electoral work</td><td style="color:#4A5161">Campaign-finance risk for the people doing the work</td></tr>
+</table>
+<p style="font-size:32px;line-height:1.4;color:#4A5161">Every piece of this package keeps each state choosing its own people.</p>
+</section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="15 of 16"><section data-notes="Here’s what I’m asking for today. First, endorse a South Carolina pilot of the growth side. Second, a small working group to draft the amendments, so they’re ready for the national Bylaws Committee by mid-2027. Third, make the mapping and election tools official SCLP resources, free to the public and offered to every state, whichever faction runs it." id="ask" data-transition="fade" style="background:#13213C;color:#F5F1E8;font-family:'Public Sans', Arial, sans-serif;padding:128px;display:flex;flex-direction:column;gap:56px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;letter-spacing:4px;text-transform:uppercase;color:#E2B13C;font-weight:600">The ask</p>
+<h2 style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#F5F1E8">Three Things From This Committee</h2>
+</div>
+<div style="display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;gap:40px;align-items:center">
+<p style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#E2B13C;width:96px">1</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:44px;font-weight:700;line-height:1.2;color:#F5F1E8">Endorse A South Carolina Pilot</h3>
+<p style="font-size:24px;line-height:1.4;color:#C5CFDF">Tools, onboarding and an honest member count, starting now.</p>
+</div>
+</div>
+<div style="display:flex;gap:40px;align-items:center">
+<p style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#E2B13C;width:96px">2</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:44px;font-weight:700;line-height:1.2;color:#F5F1E8">Form A Small Working Group</h3>
+<p style="font-size:24px;line-height:1.4;color:#C5CFDF">Draft the bylaw amendments for the 2028 convention.</p>
+</div>
+</div>
+<div style="display:flex;gap:40px;align-items:center">
+<p style="font-family:'Libre Baskerville', Georgia, serif;font-size:72px;font-weight:700;line-height:1.1;color:#E2B13C;width:96px">3</p>
+<div style="flex:1;display:flex;flex-direction:column;gap:8px">
+<h3 style="font-size:44px;font-weight:700;line-height:1.2;color:#F5F1E8">Adopt The Tools As State-Party Resources</h3>
+<p style="font-size:24px;line-height:1.4;color:#C5CFDF">Free civic tools, credited to SCLP and open to every affiliate.</p>
+</div>
+</div>
+</div>
+</section></div>
+<div class="slide" role="group" aria-roledescription="slide" aria-label="16 of 16"><section data-notes="That’s the whole package. The headline is one no faction owns: we limit power, and that includes our own. I’d like to hear objections, and anything you think I’ve got wrong about the bylaws or the New Hampshire case." id="closing" data-transition="fade" style="display:flex; flex-direction:column; gap:48px; justify-content:center; padding:128px; background:#f5f1e8">
+  <div style="width:160px; height:6px; display:flex; flex-direction:column; background:#8a5e0e">
+  </div>
+  <h2 style="font-family:'Libre Baskerville', Georgia, serif; font-size:72px; font-weight:700; line-height:1.2; color:#13213c">Let’s Be The Party That Put<br>Checks &amp; Balances On Its Own Leadership.</h2>
+  <p style="font-family:'Public Sans', Arial, sans-serif; font-size:32px; line-height:1.4; color:#4a5161">It’s a story every wing of the party can tell.</p>
+  <p style="font-family:'Public Sans', Arial, sans-serif; font-size:24px; font-weight:600; letter-spacing:4px; text-transform:uppercase; color:#8a5e0e">Questions and discussion</p>
+  </section></div>
+  </div></div>
+  <button class="nav next" type="button" aria-label="Next Slide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 5 L16 12 L9 19"/></svg></button>
+</main>
+<p class="hint">Turn your phone sideways for a bigger view.</p>
+<div class="notes" id="notes" aria-live="polite"></div>
+<footer>
+  <span class="count" id="count">1 / 16</span>
+  <button type="button" id="notesBtn" aria-pressed="false">Speaker Notes</button>
+  <button type="button" id="fullBtn">Full Screen</button>
+</footer>
+<script>
+(function () {
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var frame = document.getElementById('frame'), scaler = document.getElementById('scaler');
+  var count = document.getElementById('count'), notes = document.getElementById('notes');
+  var notesBtn = document.getElementById('notesBtn'), fullBtn = document.getElementById('fullBtn');
+  var prev = document.querySelector('.nav.prev'), next = document.querySelector('.nav.next');
+  var i = 0;
+
+  function fit() {
+    var main = document.querySelector('main');
+    var w = main.clientWidth - 32, h = main.clientHeight - 32;
+    var s = Math.min(w / 1920, h / 1080);
+    frame.style.width = (1920 * s) + 'px';
+    frame.style.height = (1080 * s) + 'px';
+    scaler.style.transform = 'scale(' + s + ')';
+  }
+
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function (el, k) { el.classList.toggle('on', k === i); });
+    count.textContent = (i + 1) + ' / ' + slides.length;
+    prev.disabled = i === 0;
+    next.disabled = i === slides.length - 1;
+    notes.textContent = slides[i].querySelector('section').getAttribute('data-notes') || '';
+    if (location.hash !== '#' + (i + 1)) history.replaceState(null, '', '#' + (i + 1));
+    fit();
+  }
+
+  prev.addEventListener('click', function () { show(i - 1); });
+  next.addEventListener('click', function () { show(i + 1); });
+  notesBtn.addEventListener('click', function () {
+    var on = notes.classList.toggle('on');
+    notesBtn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    fit();
+  });
+  fullBtn.addEventListener('click', function () {
+    if (document.fullscreenElement) document.exitFullscreen();
+    else if (document.documentElement.requestFullscreen) document.documentElement.requestFullscreen();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') { e.preventDefault(); show(i + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); show(i - 1); }
+    else if (e.key === 'Home') show(0);
+    else if (e.key === 'End') show(slides.length - 1);
+    else if (e.key === 'n' || e.key === 'N') notesBtn.click();
+    else if (e.key === 'f' || e.key === 'F') fullBtn.click();
+  });
+  var x0 = null;
+  frame.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+  frame.addEventListener('touchend', function (e) {
+    if (x0 === null) return;
+    var dx = e.changedTouches[0].clientX - x0; x0 = null;
+    if (Math.abs(dx) > 40) show(i + (dx < 0 ? 1 : -1));
+  });
+  window.addEventListener('resize', fit);
+  window.addEventListener('hashchange', function () { show((parseInt(location.hash.slice(1), 10) || 1) - 1); });
+  show((parseInt(location.hash.slice(1), 10) || 1) - 1);
+})();
+</script>
+</body>
+</html>
